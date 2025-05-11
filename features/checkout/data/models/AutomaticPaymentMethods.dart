@@ -1,0 +1,16 @@
+
+class AutomaticPaymentMethods {
+  bool? enabled;
+
+  AutomaticPaymentMethods({this.enabled});
+
+  factory AutomaticPaymentMethods.fromJson(Map<String, dynamic> json) {
+    return AutomaticPaymentMethods(
+      enabled: json['enabled'],
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {'enabled': enabled};
+  }
+}
